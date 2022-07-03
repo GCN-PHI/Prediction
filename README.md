@@ -1,11 +1,11 @@
 # Graph Convolutional Network based Virus-Human Protein-Protein Interaction Prediction for Novel Viruses
-This repository contains the code of a three-stage machine learning pipeline that generates and uses hybrid embeddings for PHI prediction. The details of this study and experimental results are published in the paper below:
+This repository contains the code of a three-stage machine learning pipeline that generates and uses hybrid embeddings for PHI prediction. The details of this study and the experimental results are published in the paper below:
 ## citation
 
 ## System requirements
 
  The code is tested on Python version >= 3.6. Following Python libraries are required:
-- Pip
+- Pip3
 - Pandas
 - Numpy
 - Scikit-learn
@@ -15,7 +15,7 @@ This repository contains the code of a three-stage machine learning pipeline tha
 - Pickle 
 - Joblib
 
-The libraries shown below are installed automatically by the code using Pip:
+The libraries shown below are installed automatically by the code using Pip3:
 - StellarGraph
 - Interpret
 - SentencePiece
