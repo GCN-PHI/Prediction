@@ -101,7 +101,7 @@ def DeepPHI(training_dataset, test_dataset, exp_type, emb_model, classifier_mode
     if exp_type == "Holdout":
         interaction_classifier(classifier_model, hybrid_emb_dict, train_edges, train_labels, x_ho, y_ho, load_pretrained_classifier)
     elif exp_type == "5_fold":
-        interaction_classifier(classifier_model, hybrid_emb_dict, x_ho, y_ho, load_pretrained_classifier)
+        interaction_classifier(classifier_model, hybrid_emb_dict, x_ho, y_ho, None, None, load_pretrained_classifier)
 
 def test_embedding_methods(training_dataset, test_dataset, exp_type, emb_model, classifier_model):
   aa_emb_list = ["Doc2Vec-regular", "Doc2Vec-unified", "Doc2Vec-multi", "CTD", "PSSM"]
