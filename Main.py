@@ -28,7 +28,7 @@ from stellargraph.mapper import GraphSAGENodeGenerator
 from stellargraph.mapper import GraphSAGELinkGenerator
 from stellargraph.utils import plot_history
 from stellargraph.layer import GraphSAGE, link_classification
-from keras import layers, optimizers, losses, metrics, Model
+from tensorflow.keras import layers, optimizers, losses, metrics, Model
 from interpret.glassbox import ExplainableBoostingClassifier, ExplainableBoostingRegressor
 from Bio import SeqIO
 from Bio.KEGG import REST
