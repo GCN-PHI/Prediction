@@ -25,10 +25,10 @@ def interaction_classifier(clf_model, embed_dict, x_tra, y_tra, x_ho=None, y_ho=
             print("Training has been started...", len(x_edges))
             if load_model:
               edge_classifier = binary_classifier("Holdout classifier", "RF", x_edges,y_tra)
-              with open('../Data/RF_final.pkl','wb') as f:
+              with open('~/Data/RF_final.pkl','wb') as f:
                 pickle.dump(edge_classifier,f)
             else:
-              with open('../Data/RF_final.pkl', 'rb') as f:
+              with open('~/Data/RF_final.pkl', 'rb') as f:
                 edge_classifier = pickle.load(f)
             print("Training is ended...")
             test_preds = []
