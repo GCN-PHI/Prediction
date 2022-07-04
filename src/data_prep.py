@@ -6,7 +6,7 @@ def load_base_graph(training_graph):
     neg_edges = []
     
     
-    df_pos = pd.read_excel('../Data/' + training_graph)
+    df_pos = pd.read_excel('~/Data/' + training_graph)
     g_nx_pos = nx.from_pandas_edgelist(df_pos,"HOST","VIRUS") # The positive interaction graph
 
     for node_id, node_data in g_nx_pos.nodes(data=True): # Declare the node type. It is needed by the GraphSage. "default" is a arbitrary type.
@@ -36,7 +36,7 @@ def load_base_graph(training_graph):
 
 def load_human_prots():
   human_prots = {}
-  with open("../Data/uniprot_homo_sapien.fasta.gz", "r") as handle:
+  with open("~/Data/uniprot_homo_sapien.fasta.gz", "r") as handle:
       seq_list = list(SeqIO.parse(handle, "fasta"))
   for prot in seq_list:
       human_prots[str(prot.id.split('|')[1])] = str(prot.seq)
@@ -53,7 +53,7 @@ def load_holdout(dataset_name, host_prots, pathogen_prots, seq_dict):
     extra_ho_prots = []
     human_prots = load_human_prots()
     human_prots_list = human_prots.keys()
-    df_holdout = pd.read_excel('../Data/'+ dataset_name)
+    df_holdout = pd.read_excel('~/Data/'+ dataset_name)
     g_nx_holdout = nx.from_pandas_edgelist(df_holdout,"HOST","VIRUS")
     for index,row in df_holdout.iterrows():
       hold_out_prot[row["HOST"]] = row["HOST_SEQ"]
