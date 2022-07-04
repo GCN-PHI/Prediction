@@ -14,11 +14,11 @@ def d2v_embeddings(seq_dict, host_prots, is_train = False, bpe_type = "multi"):
     max_epochs = 10
     alpha = 0.025
     if bpe_type == "unified":
-        sp_h = spm.SentencePieceProcessor(model_file='../Data/a.model')
-        sp_p = spm.SentencePieceProcessor(model_file='../Data/a.model')
+        sp_h = spm.SentencePieceProcessor(model_file='~/Data/a.model')
+        sp_p = spm.SentencePieceProcessor(model_file='~/Data/a.model')
     elif bpe_type == "multi":
-        sp_h = spm.SentencePieceProcessor(model_file='../Data/h.model')
-        sp_p = spm.SentencePieceProcessor(model_file='../Data/p.model')
+        sp_h = spm.SentencePieceProcessor(model_file='~/Data/h.model')
+        sp_p = spm.SentencePieceProcessor(model_file='~/Data/p.model')
     elif bpe_type == "regular":
         for prot in seq_dict:
           chunks, chunk_size = len(seq_dict[prot]), 5
