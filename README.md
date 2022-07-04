@@ -36,7 +36,7 @@ where the **HOST** is the unique id of a host protein and **VIRUS** is the uniqu
 
 **Demo**
 
-Run **main.py** file in command line without passing no argument for testing **Adeno virus** dataset with all the proposed embedding methods. The **PHISTO** dataset is used for training in demo.
+Run the **main.py** file in the command line without passing no argument for testing the **Adenovirus** dataset with all the proposed embedding methods. The **PHISTO** dataset is used for training in demo.
 
 **Quick start**
 
