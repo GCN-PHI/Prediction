@@ -22,13 +22,13 @@ def preliminary_predictor(X, y, g_nx_all, all_dict, edge_set, load_pretrained):
             _all_dict[prot_list[i]] = emb_list[i]
         print("PCA applied.")
     if load_pretrained:
-      edge_predictor = joblib.load("../Data/edge_predictor_"+ str(len(_all_dict[X[0][0]])) + ".joblib")
+      edge_predictor = joblib.load("~/Data/edge_predictor_"+ str(len(_all_dict[X[0][0]])) + ".joblib")
     else:
       for k in range(len(X)):
           edge_embeddings.append(edge_embedding(_all_dict[X[k][0]],_all_dict[X[k][1]],"Concat"))
       # Training the edge predictor for mapping holdout proteins
       edge_predictor = binary_classifier("Edge_classifier", "RF", edge_embeddings, y)
-      joblib.dump(edge_predictor, "../Data/edge_predictor_"+ str(len(_all_dict[X[0][0]])) + ".joblib")
+      joblib.dump(edge_predictor, "~/Data/edge_predictor_"+ str(len(_all_dict[X[0][0]])) + ".joblib")
         
     print("Training complated for edge predictor.")
     edge_embeddings = None
