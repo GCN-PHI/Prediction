@@ -31,7 +31,7 @@ The interactions are given in `Excel (.xlsx)` file. The file is in a simple form
 | ------------- | ------------- | ------------- | ------------- |
 | P13861 | P03259 | MSHIQ... | MRTEM... |
 
-Please check ***Data/Adenoviridae.xlsx*** as an example file.
+where the **HOST** is the unique id of a host protein and **VIRUS** is the unique id of the interacting virus protein. **HOST_SEQ** and **VIRUS_SEQ** are the aminoacid sequences of the host and virus proteins, respectively. Please check ***Data/Adenoviridae.xlsx*** for an example file.
 
 
 **Demo**
