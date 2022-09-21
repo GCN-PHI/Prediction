@@ -1,6 +1,5 @@
 # Graph Convolutional Network based Virus-Human Protein-Protein Interaction Prediction for Novel Viruses
-This repository contains the code of a three-stage machine learning pipeline that generates and uses hybrid embeddings for PHI prediction. The details of this study and the experimental results are published in the paper below:
-## citation
+This repository contains the code of a three-stage machine learning pipeline that generates and uses hybrid embeddings for PHI prediction. The details of this study and the experimental results are available in its paper. Please [click here](https://www.sciencedirect.com/science/article/pii/S1476927122001359) to access the paper.
 
 ## System requirements
 
@@ -59,4 +58,6 @@ or just calling as a function:
 | lem  | **(optional, default = False)** Pass ***True*** for loading pre-trained biological feature embedding model instead of training a new one.  |
 | lpc  | **(optional, default = False)** Pass ***True*** for loading pre-trained interaction classifier model instead of training a new one.  |
 
+## Citation
+Koca, M. B., Nourani, E., Abbasoğlu, F., Karadeniz, İ., & Sevilgen, F. E. (2022). **Graph convolutional network based virus-human protein-protein interaction prediction for novel viruses**. Computational Biology and Chemistry, 101, 107755.
 
